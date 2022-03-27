@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            overflow: hidden;
+            font-size: 18px;
+        }
+        button{
+            cursor:pointer;
+        }
+        a{
+            text-decoration: none;
+            color: #333;
+            line-height: 2;
+        }
+        li{
+            text-align: center;
+            font-size: 15px;
+        }
+        h1{
+            font-size: 18px;
+            color: #333;
+            font-weight: 500;
+            text-align: center;
+            line-height: 3;
+        }
+        .open{
+            background: url(menu.png) center center/ cover;
+            border: none;
+            margin-left: 5px;
+            height: 45px;
+            width: 45px;
+        }
+        .close{
+            background: url(close.png) center center / cover #fff;
+            background-color: #fff;
+            border: none;
+            margin-top: 10px;
+            margin-left: 10px;
+            height: 30px;
+            width: 30px;
+        }
+        nav{
+            width: 100vw;
+            height: 30px;
+            background-color: #333;
+        }
+        .ham{
+            width: 350px;
+            height: 100vh;
+            background-color: #fff;
+            position: absolute;
+            top:0;
+            left:-350px;
+        }
+    </style>
+</head>
+<body>
+    <button class="open"></button>
+    <div class="ham">
+        <button class="close"></button>
+            <h1><a href="#">HOME</a></h1>
+            <h1>HOMESTAYS</h1>
+            <ul>
+                <li><a href="#">CHIKKAMAGLORE</a></li>
+                <li><a href="#">COORG</a></li>
+                <li><a href="#">SAKLESHPOORA</a></li>
+            </ul>
+            <h1>PLACES TO VISIT</h1>
+            <ul>
+                <li><a href="#">CHIKKAMAGLORE</a></li>
+                <li><a href="#">COORG</a></li>
+                <li><a href="#">SAKLESHPOORA</a></li>
+            </ul>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
